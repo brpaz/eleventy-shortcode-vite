@@ -25,11 +25,9 @@ module.exports = function (eleventyConfig) {
         viteShortcodes.register(eleventyConfig, '<path_to_vite_manifest_file>')
     }
 }
+```
 
 It´s important to only register for the "production/build" envrionment, otherwise the manifest file won´t exist and it will fail.
-
-
-```
 
 This will register the following shortcodes, that you can use on your HTML:
 
