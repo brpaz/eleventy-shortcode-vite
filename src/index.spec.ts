@@ -35,6 +35,6 @@ describe('Eleventy Vite shorcodes', () => {
 
     const result = shortcodes.viteStylesheetTag('src/assets/main.js');
 
-    expect(result).toBe('<link rel="stylesheet" href="assets/main.402e9001.css"></link>');
+    expect(result).toBe('<link rel="stylesheet" href="assets/main.402e9001.css"/>');
   });
 });
