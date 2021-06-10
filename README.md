@@ -2,7 +2,7 @@
 
 > [Eleventy](https://www.11ty.dev/) shortcodes to integrate with [Vite](https://vitejs.dev/).
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brpaz/eleventy-shortcode-vite/CI?style=for-the-badge)](https://github.com/brpaz/vite-manifest-parser/actions/workflows/ci.yml)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brpaz/eleventy-shortcode-vite/CI?style=for-the-badge)](https://github.com/brpaz/eleventy-shortcode-vite/actions/workflows/ci.yml)
 ![NPM](https://img.shields.io/npm/v/brpaz/eleventy-shortcode-vite?style=for-the-badge)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)

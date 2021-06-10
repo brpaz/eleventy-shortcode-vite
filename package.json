@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "A set of shortcodes to facilitate the integration of Vite into an Eleventy project",
     "main": "index.js",
+    "types": "index.d.ts",
     "repository": "https://github.com/brpaz/vite-manifest-parser",
     "author": "Bruno Paz",
     "keywords": [
@@ -35,6 +36,7 @@
         "typescript": "^4.3.2"
     },
     "scripts": {
+        "build": "tsc",
         "lint": "eslint src --ext=ts --fix",
         "test": "jest --coverage",
         "format": "prettier --write lib/**/*.ts",
