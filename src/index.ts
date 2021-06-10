@@ -9,30 +9,30 @@ export default class ViteShortcodes {
 
   private constructor(eleventyConfig: EleventyConfig, manifestPath: string) {
     this.manifestParser = new ManifestParser(manifestPath);
-    eleventyConfig.addShortcode('viteScript', this.viteScriptTag);
-    eleventyConfig.addShortcode('viteLegacyScript', this.viteLegacyScriptTag);
-    eleventyConfig.addShortcode('viteSytlesheet', this.viteStylesheetTag);
+    eleventyConfig.addShortcode('viteScript', this.viteScriptTag.bind(this));
+    eleventyConfig.addShortcode('viteLegacyScript', this.viteLegacyScriptTag.bind(this));
+    eleventyConfig.addShortcode('viteStylesheet', this.viteStylesheetTag.bind(this));
   }
 
   static register(eleventyConfig: EleventyConfig, manifestPath: string): ViteShortcodes {
     return new ViteShortcodes(eleventyConfig, manifestPath);
   }
 
-  viteScriptTag(entry: string): string {
-    const filePath = this.manifestParser.getScript(entry);
+  viteScriptTag(entryFilename: string): string {
+    const filePath = this.manifestParser.getScript(entryFilename);
 
     return `<script type="module" src="${filePath}"></script>`;
   }
 
-  viteLegacyScriptTag(entry: string): string {
-    const filePath = this.manifestParser.getScript(entry);
+  viteLegacyScriptTag(entryFilename: string): string {
+    const filePath = this.manifestParser.getScript(entryFilename);
 
     return `<script type="nomodule" src="${filePath}"></script>`;
   }
 
-  viteStylesheetTag(entry: string): string {
-    const cssFiles = this.manifestParser.getCss(entry);
+  viteStylesheetTag(entryFilename: string): string {
+    const cssFiles = this.manifestParser.getCss(entryFilename);
 
-    return cssFiles.map((cssFile) => `<link rel="stylesheet" href="${cssFile}"></link>`).join('\n');
+    return cssFiles.map((cssFile) => `<link rel="stylesheet" href="${cssFile}"/>`).join('\n');
   }
 }

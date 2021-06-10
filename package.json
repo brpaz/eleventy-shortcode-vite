@@ -39,7 +39,7 @@
         "build": "tsc",
         "lint": "eslint src --ext=ts --fix",
         "test": "jest --coverage",
-        "format": "prettier --write lib/**/*.ts",
+        "format": "prettier --write src/**/*.ts",
         "release": "semantic-release"
     },
     "lint-staged": {
