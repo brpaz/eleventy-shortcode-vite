@@ -4,7 +4,7 @@
     "description": "A set of shortcodes to facilitate the integration of Vite into an Eleventy project",
     "main": "index.js",
     "types": "index.d.ts",
-    "repository": "https://github.com/brpaz/vite-manifest-parser",
+    "repository": "https://github.com/brpaz/eleventy-shortcode-vite",
     "author": "Bruno Paz",
     "keywords": [
         "vite",
