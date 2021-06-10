@@ -1,0 +1,16 @@
+{
+  "src/assets/main.js": {
+    "file": "assets/main.2d87e327.js",
+    "src": "src/assets/main.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor.d1356a91.js"
+    ],
+    "css": [
+      "assets/main.402e9001.css"
+    ]
+  },
+  "_vendor.d1356a91.js": {
+    "file": "assets/vendor.d1356a91.js"
+  }
+}
