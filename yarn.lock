@@ -301,10 +301,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@brpaz/vite-manifest-parser@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@brpaz/vite-manifest-parser/-/vite-manifest-parser-1.0.0.tgz#c7f5b777a6f00edf71de7b60e57d64b331b5c5b3"
-  integrity sha512-MncC64ShTHCWSLFceEEjc34A1NRc/jhvoAlkxngIWHhKw+rM5tNBY9WGh15JihSW0QNpi+z1VvwGGOY+j60vCA==
+"@brpaz/vite-manifest-parser@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@brpaz/vite-manifest-parser/-/vite-manifest-parser-1.1.0.tgz#4a078c7e643804f191ca9744790b22f8adb52c6b"
+  integrity sha512-g+PJXw0bV4TX+favPaXOPOx/pMq5wlewxRmKr8ivWlBI0NppUioDGC6s8Tdy513xuMpAs8tcjbfmRdm3zI7Wew==
 
 "@commitlint/execute-rule@^12.1.4":
   version "12.1.4"

@@ -10,7 +10,7 @@ const mockEleventyConfig = {
 describe('Eleventy Vite shorcodes', () => {
   it('registry the shortcodes', () => {
     ViteShortcodes.register(mockEleventyConfig, manifestPath);
-    expect(mockEleventyConfig.addShortcode).toBeCalledTimes(3);
+    expect(mockEleventyConfig.addShortcode).toBeCalledTimes(4);
   });
 
   it('returns script tag for JS assets', () => {
@@ -36,5 +36,13 @@ describe('Eleventy Vite shorcodes', () => {
     const result = shortcodes.viteStylesheetTag('src/assets/main.js');
 
     expect(result).toBe('<link rel="stylesheet" href="assets/main.402e9001.css"/>');
+  });
+
+  it('returns imported scripts as preload tags', () => {
+    const shortcodes = ViteShortcodes.register(mockEleventyConfig, manifestPath);
+
+    const result = shortcodes.viteScriptPreload('src/assets/main.js');
+
+    expect(result).toBe('<link rel="modulepreload" href="assets/vendor.d1356a91.js"/>');
   });
 });
